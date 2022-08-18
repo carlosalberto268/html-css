@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Stranger';
+            src: url('Font/Stranger.ttf') format('truetype');
+            font-weight: lighter;
+            font-style: normal;
+
+            /*
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-operntype
+            - truetype-aat (Apple Advanced typography)
+            - svg
+            */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Stranger', Times, serif;
+            font-size: 10em;
+            font-weight: normal;
+        }
+        p{
+            font-family: 'Stranger', 'Arial Narrow', Arial, sans-serif;
+            font-size: 5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed facilis, dolorem eius quae delectus ipsum cumque id ex a quod asperiores expedita ab, corrupti veniam iste facere doloremque. Quod?Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nisi itaque magnam quos odit excepturi dolor eos eligendi ipsa, nostrum nemo at. Autem facilis in eum sapiente consequatur aut iste?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque dolor doloremque nemo eaque culpa, sunt voluptatibus similique quas inventore non nesciunt officiis illum obcaecati autem voluptas itaque tempore magnam laboriosam?</p>
+</body>
+</html>

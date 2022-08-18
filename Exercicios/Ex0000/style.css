@@ -1,0 +1,61 @@
+@charset "UTF-8";
+         * { /*configurações globais de CSS */
+             height: 48%;  
+            }
+        body {
+            background-image: linear-gradient(to bottom, #59BDB7, #71F0E7);
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            
+        }
+        h1 {
+            width: 611px;
+            height: 35px;
+            background-color: lightgray;
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding: 9px;
+            outline-width: 15px;
+            outline-style: solid;
+            outline-color: blue;
+            margin: auto;
+        
+            /*
+            color: #228B22;
+            background-color: yellow;
+            text-align: center; */
+        }
+
+        h2 {
+            color: darkred;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+        div{
+            display: inline-block;
+            background-color: aqua;
+            border: 3px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            text-decoration: none;
+        }
+
+
+    div:hover{
+        background-color: rgba(187, 69, 69, 0.562);
+    }
+    a {
+        text-decoration: none; /*Retira o sublinhado dos links*/
+        font-weight: bold;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }

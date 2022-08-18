@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas
+            cm, mm, in, pc, pt, pc
+            Medidas Relativas
+            em, ex, rem, vw(largura), vh(altura)
+            16px é geralmente = 1em
+            */
+            font-size: 1em;
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: underline;
+            /* Tipos de peso de fonte
+            lighter, normal, bold and bolder */
+        }
+        h1 {
+            
+
+            /* Exixte duas forma de fazer a configuração da fonte em HTML*/
+            /* Primeira fazendo item por item*/
+            /*font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 3em;
+            font-style: italic;*/
+
+            /*Segunda fazendo uma linha, desde que siga essa ordem*/
+            /* Shorthand
+               font-style -> font-weight -> font=size -> font-family*/
+            font: italic bold 3em 'Times New Roman, sans-serif';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eaque atque ad odio placeat quasi fuga eum. Magni quidem veniam eaque necessitatibus. Cum perspiciatis officia, omnis illum molestiae quisquam consequuntur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo vero, commodi placeat dicta dolor eveniet vel perspiciatis quibusdam ullam aliquid, id hic impedit officia molestias? Ducimus officia harum consequuntur est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam est corrupti odit. Odio facere minus ea sunt ratione quos tempora quibusdam iste, dolore rem repellat dolor aliquid quia reprehenderit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati minima aut ducimus ut dolores, eius dolore. Dolores saepe asperiores quos eaque tempora quas delectus numquam, totam aut, temporibus, quasi fugit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem omnis debitis quia atque! Esse in accusamus, commodi ea nulla quibusdam, sunt, quis quae eaque laborum optio aperiam alias ipsa nobis.</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut perferendis vel aliquam totam, quisquam ad, quae pariatur sed voluptatum minima exercitationem nam fugit error illo consequuntur sapiente dolorum voluptatem veniam!</p>
+</body>
+</html>

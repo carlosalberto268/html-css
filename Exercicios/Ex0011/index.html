@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+    <link rel="stylesheet" href="../Ex0000/style.css">
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente almente e diminua  o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/Cyberpunk2077-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/Cyberpunk2077-m.png" type="image/png">
+        <img src="Imagens/Cyberpunk2077-g.png" alt="Imagens flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/Down With Your Getup - Mini Vandals.mp3" controls autoplay></audio>
+
+    <h1>Outra forma de carregar audio</h1>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Down With Your Getup - Mini Vandals.mp3" type="audio/mpeg">
+        <source src="midia/Down With Your Getup - Mini Vandals.mp3" type="audio/ogg">
+        <source src="midia/Down With Your Getup - Mini Vandals.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudios <a href="midia/Down With Your Getup - Mini Vandals.mp3">Clique aqui para baixar o MP3</a></p>
+    </audio>
+
+    <h1>Inserir videos hopedados localmente</h1>
+
+    <video src="midia/Pexels-Musa-Ortaç-8118839 (1).webm" controls autoplay loop></video>
+
+    <h1>Outra maneira de fazer</h1>
+    <video controls autoplay loop>
+        <source src="midia/Pexels-Musa-Ortaç-8118839 (1).webm" type="video/mp4">
+        <source src="midia/Pexels-Musa-Ortaç-8118839 (1).webm" type="video/mp4">
+        <source src="midia/Pexels-Musa-Ortaç-8118839 (1).webm" type="video/webm">
+        <source src="midia/Pexels-Musa-Ortaç-8118839 (1).webm" type="video/ogg">
+    </video>
+
+    <h1>Inserindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Adicionando video do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&color=ff0179&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="../Ex0000/index.html">Voltar ao menu</a></p>
+</body>
+</html>
