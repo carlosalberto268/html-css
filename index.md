@@ -4,9 +4,9 @@ This site show my evolutions to learn HTNL5 and CSS3 on Cursoem Video by Gustavo
 
 Each code did step by step and I try conment more possible.
 
-### Markdown
+### Exercises
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Now, I show you each exercise that I did
 
 ```markdown
 Syntax highlighted code block
