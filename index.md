@@ -1,8 +1,8 @@
-## Welcome to GitHub Pages
+## Welcome to My GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/carlosalberto268/html-css/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This site show my evolutions to learn HTNL5 and CSS3 on Cursoem Video by Gustavo Guanabara
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Each code did step by step and I try conment more possible.
 
 ### Markdown
 
