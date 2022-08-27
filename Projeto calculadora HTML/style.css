@@ -28,14 +28,13 @@ h2{
     width: 340px;
     padding: 20px;
     border-radius: 20px;
-    border-style: solid;
+    border-style: solid 10px;
     box-shadow: 15px 15px 20px rgba(0,0,0,0.1),
     -15px -15px 20px rgba(255, 255, 255, 0.842);
 }
 .calculadora .buttons {
     position: relative;
     display: grid;
-   
 }
 
 .calculadora .buttons #value {
@@ -45,18 +44,16 @@ h2{
     overflow: none;
     width: 100%;
     text-align: end;
-    color: black;
+    color: navy;
     height: 100px;
     line-height: 100px;
-    box-shadow: inset 2px 2px 7px rgba(0,0,0,0.1),
-    inset -2px -2px 10px #ffff;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+    inset -5px -5px 20px #ffff;
     border-radius: 15px;
     margin-bottom: 15px;
     padding: 0 20px;
     font-size: 2em;
     font-weight: 500;
-    border-style: solid;
-    background: lightgray;
 }
 
 .calculadora .buttons span {
@@ -77,7 +74,6 @@ h2{
     box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
      -5px -5px 20px #ffff;
      border-radius: 100%;
-   
 }
 .calculadora .buttons span:active {
     box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
