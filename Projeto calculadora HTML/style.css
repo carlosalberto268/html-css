@@ -13,9 +13,12 @@ body{
     min-height: 100vh;
     background: rgba(243, 241, 241, 0.918);
 }
+.dark{
+    background: #282c2f;
+}
 span {
     font-family: 'Share Tech Mono';
-    background-color: #F28B0C;
+    background-color: rgb(247, 242, 242);
 
 }
 
@@ -31,6 +34,12 @@ h2{
     border-style: solid 10px;
     box-shadow: 15px 15px 20px rgba(0,0,0,0.1),
     -15px -15px 20px rgba(255, 255, 255, 0.842);
+}
+
+.dark .calculadora {
+    background: #33393e;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.25),
+    -15px -15px 20px rgba(255, 255, 255, 0.1);
 }
 .calculadora .buttons {
     position: relative;
@@ -55,7 +64,12 @@ h2{
     font-size: 2em;
     font-weight: 500;
 }
-
+.dark .calculadora .buttons #value{
+    background: #33393e;
+    color: #edf1f4;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.25),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
 .calculadora .buttons span {
     position: relative;
     padding: 10px;
@@ -74,6 +88,17 @@ h2{
     box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
      -5px -5px 20px #ffff;
      border-radius: 100%;
+}
+.dark .calculadora .buttons span {
+    background: #33393e;
+    color: #eee;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25),
+     -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+.dark .calculadora .buttons span:active{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25),
+    -5px -5px 10px rgba(255, 255, 255, 0.1); 
 }
 .calculadora .buttons span:active {
     box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
@@ -101,6 +126,25 @@ h2{
     border: 2px solid #edf1f4;
     border-radius: 10px;
 }
+.calculadora .buttons span#divisão{
+    background-color: #F28B0C;
+
+}
+.calculadora .buttons span#multiplicação{
+    background-color: #faf619;
+
+}
+.calculadora .buttons span#subtração{
+    background-color: #c40cf2de;
+
+}
+.dark .calculadora .buttons span#apagar,
+.dark .calculadora .buttons span#soma,
+.dark .calculadora .buttons span#igual
+{
+border: 2px solid #333;
+}
+
 .calculadora .buttons span#apagar:active,
 .calculadora .buttons span#soma:active,
 .calculadora .buttons span#igual:active
@@ -108,4 +152,24 @@ h2{
     box-shadow: 5px 5px 20px rgba(0,0,0,0.1),
      -5px -5px 10px #ffff,
     inset 5px 5px 10px rgba(0,0,0,0.1);
+}
+
+.dark .calculadora .buttons span#apagar:active,
+.dark .calculadora .buttons span#soma:active,
+.dark .calculadora .buttons span#igual:active
+{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1);
+}
+.toggLeBtn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #556;
+    cursor: pointer;
+    border: 2px solid #edf1f4;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+    -5px -5px 100px #fff;
 }

@@ -10,16 +10,17 @@
 
 </head>
 <body>
+    <div class="toggLeBtn"></div>
     <div class="calculadora">
         <div class="buttons">
             <h2 id="value"></h2>
             <span id="apagar">Apagar</span>
-            <span>/</span>
-            <span>*</span>
+            <span id="divisão">/</span>
+            <span id="multiplicação">*</span>
             <span>7</span>
             <span>8</span>
             <span>9</span>
-            <span>-</span>
+            <span id="subtração">-</span>
             <span>4</span>
             <span>5</span>
             <span>6</span>
@@ -37,6 +38,8 @@
         let buttons = document.querySelector('.buttons');
         let btn = document.querySelectorAll('span');
         let value = document.getElementById('value');
+        let toggLeBtn = document.querySelector('.toggLeBtn');
+        let body = document.querySelector('body');
 
         for(let i=0; i<btn.length;i++)
         {
@@ -54,6 +57,10 @@
                     }
                 }
             })
+        }
+
+        toggLeBtn.onclick = function(){
+            body.classList.toggle('dark');
         }
     </script>
 </body>
