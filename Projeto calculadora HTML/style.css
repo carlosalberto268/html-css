@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Share Tech Mono', 'sans-serif';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(243, 241, 241, 0.918);
+}
+span {
+    font-family: 'Share Tech Mono';
+    background-color: #F28B0C;
+
+}
+
+h2{
+    font-family: 'Share Tech Mono';
+}
+
+.calculadora {
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    border-style: solid;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.1),
+    -15px -15px 20px rgba(255, 255, 255, 0.842);
+}
+.calculadora .buttons {
+    position: relative;
+    display: grid;
+   
+}
+
+.calculadora .buttons #value {
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: black;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 2px 2px 7px rgba(0,0,0,0.1),
+    inset -2px -2px 10px #ffff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    font-size: 2em;
+    font-weight: 500;
+    border-style: solid;
+    background: lightgray;
+}
+
+.calculadora .buttons span {
+    position: relative;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+     -5px -5px 20px #ffff;
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    color: black;
+    border: 2px solid #ffff;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+     -5px -5px 20px #ffff;
+     border-radius: 100%;
+   
+}
+.calculadora .buttons span:active {
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+     inset -5px -5px 20px #ffff;
+     color: red;
+}
+.calculadora .buttons span#apagar {
+    grid-column: span 2;
+    background: #f44336;
+    color: #ffff;
+    border: 2px solid #edf1f4;
+    border-radius: 10px;
+}
+.calculadora .buttons span#soma {
+    grid-row: span 2;
+    background-color: green;
+    color: #edf1f4;
+    border: 2px solid #edf1f4;
+    border-radius: 10px;
+}
+.calculadora .buttons span#igual{
+    grid-row: span 2;
+    background-color: #2196f3;
+    color: #ffff;
+    border: 2px solid #edf1f4;
+    border-radius: 10px;
+}
+.calculadora .buttons span#apagar:active,
+.calculadora .buttons span#soma:active,
+.calculadora .buttons span#igual:active
+{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.1),
+     -5px -5px 10px #ffff,
+    inset 5px 5px 10px rgba(0,0,0,0.1);
+}
