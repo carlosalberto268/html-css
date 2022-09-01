@@ -1,0 +1,13 @@
+#container{
+    position: relative;
+    background-image: url('imagens/background001.jpg');
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    height: 30vh;
+}
+
+#conteudo{
+    position: absolute;
+    padding: 50px;
+
+}
