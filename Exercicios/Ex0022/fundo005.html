@@ -8,8 +8,8 @@
     <style>
         body{
             height: 100vh;
-            /*background-image: url('imagens/wallpaper002.jpg');
-            background-color: black;
+            /*background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -17,16 +17,19 @@
             
             background-size: Contain; 100% da imagem porem distorce a imagem quando diminur o navegador.
             background-size: cover; Cobrir a tela inteira - faz caber na tela a imagem sem distorcer a imagem
-            background-size: cover;*/
+            background-size: cover;
+            
+            background-attachment: fixed - rolo o conteudo mas não a imagem;
+            background-attachment: scroll - rola a imagem junto com o conteudo;*/
 
             /*ShortHand - Background
             
-            colos > image > position > repeat > [size] > attacment
+            color > image > position > repeat > [size] > attacment
 
             Size pode ser que funcione ou não! pode se colocar separado
             */
 
-            background: url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
 
         }
