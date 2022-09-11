@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo 1 de grid</title>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: purple;
+            text-align: center;
+        }
+        header{
+            background-color: blue;
+            /*grid-column-start: 1; esta é a forma padrão para configurar o grud*/
+            /*grid-column-end: 3;*/
+            /*grid-row: 1/3; esta é uma segunda forma. adicionando a linha inicio e fim*/
+            grid-area: header;
+        }
+        main{
+            background-color: yellow;
+            /*grid-column-start: 1;
+            grid-column-end: 2;*/
+            grid-area: main;
+        }
+        aside{
+            background-color: green;
+            /*grid-column-start: 2;
+            grid-column-end: 3;*/
+            grid-area: aside;
+        }
+        footer{
+            background-color: red;
+            /*grid-column-start: 1;
+            grid-column-end: 3;*/
+            grid-area: footer;
+
+        }
+        .container {
+            grid-gap: 5px;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: 10vh 70vh 10vh;
+            grid-template-areas: "header header" 
+                                "main aside"
+                                "footer footer"
+            /*Este é a terceira forma de configurar o grid. usa no container e nos itens (main, aside, footer etc aplica o grid-area) */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+
+        <main>
+            <h1>Main</h1>
+        </main>  
+
+        <aside>
+            <h1>aside</h1>
+        </aside>
+
+        <footer>
+            <h1>footer</h1>
+        </footer> 
+    </div>      
+</body>
+</html>
