@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        iframe{
+            border: 0px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quod earum sint! Eos, voluptatibus illum. Temporibus quis nemo adipisci dignissimos numquam. Aspernatur, nostrum error doloribus hic odit porro. At, nam?</p>
+
+    <iframe src="pag003.html" frameborder="0"> Seu navegador não é compativel</iframe><br>
+    <p>Esse utiliza sandbox para bloquear ações de envio de dados. bloqueia completamente o iframe</p>
+    <iframe src="pag003.html" sandbox="sandbox"> Seu navegador não é compativel</iframe><br>
+    <p>Com o referrerpolicy + p sandbox (sandbox) evita coleta de dados no site
+    <p><br></p>
+    <iframe src="pag003.html" sandbox="sandbox" referrerpolicy="no-refferer"> Seu navegador não é compativel</iframe><br>
+    <p>Com o referrerpolicy + p sandbox (allow-same-origin) habilita itens pontuais a ser executados no iframe. No cado abaixo habilita o formulario</p><br>
+    <iframe src="pag003.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-refferer"> Seu navegador não é compativel</iframe>
+<p>Com o referrerpolicy evita coleta de dados no site/p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quos quasi possimus odio, eum culpa, minima beatae tenetur facilis veniam esse dicta. Quasi ducimus unde voluptas, quod aliquam ab ea!</p>
+</body>
+</html>
